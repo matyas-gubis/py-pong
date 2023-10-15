@@ -10,7 +10,6 @@ class Paddle(Turtle):
         self.color("white")
         self.penup()
         self.goto(starting_position)
-        self.points = 0
         self.should_move_up = False
         self.should_move_down = False
 
@@ -31,8 +30,3 @@ class Paddle(Turtle):
     def move_down(self):
         if self.ycor() > -240:
             self.goto(self.xcor(), self.ycor() - 5)
-
-    def score(self):
-        self.points += 1
-
-

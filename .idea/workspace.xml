@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f251a217-4142-470a-9687-4f2dcadf8150" name="Changes" comment="Paddles">
-      <change afterPath="$PROJECT_DIR$/ball.py" afterDir="false" />
+    <list default="true" id="f251a217-4142-470a-9687-4f2dcadf8150" name="Changes" comment="Optimising">
+      <change afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/ball.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paddle.py" beforeDir="false" afterPath="$PROJECT_DIR$/paddle.py" afterDir="false" />
     </list>
@@ -106,11 +107,27 @@
       <option name="project" value="LOCAL" />
       <updated>1697394543441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add ball">
+      <created>1697399523969</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697399523969</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Optimising">
+      <created>1697399550382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697399550382</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Paddles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paddles" />
+    <MESSAGE value="Add ball" />
+    <MESSAGE value="Optimising" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimising" />
   </component>
 </project>

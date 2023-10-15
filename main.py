@@ -3,18 +3,19 @@ import turtle
 
 from ball import Ball
 from paddle import Paddle
+from scoreboard import Scoreboard
 
 screen = turtle.Screen()
 
 screen.bgcolor("black")
 screen.title("pong")
 screen.setup(width=800, height=600)
-move_up = False
 
 screen.tracer(0)
 l_paddle = Paddle((-350, 0))
 r_paddle = Paddle((350, 0))
 ball = Ball()
+scoreboard = Scoreboard()
 screen.update()
 screen.listen()
 screen.onkeypress(r_paddle.turn_on_move_up, "Up")
@@ -49,15 +50,16 @@ while not game_over:
     if ball.distance(r_paddle) < 50 and 330 < ball.xcor() < 360 \
             or ball.distance(l_paddle) < 50 and -330 > ball.xcor() > -360:
         ball.bounce_x()
+        ball.increase_speed()
 
     if ball.xcor() > 380:
-        l_paddle.score()
+        scoreboard.increment_l_score()
         ball.restart()
-        print(f"l_paddle score: {l_paddle.points} r_paddle score: {r_paddle.points}")
+        ball.bounce_x()
 
     if ball.xcor() < -380:
-        r_paddle.score()
+        scoreboard.increment_r_score()
         ball.restart()
-        print(f"l_paddle score: {l_paddle.points} r_paddle score: {r_paddle.points}")
+        ball.bounce_x()
 
 screen.exitonclick()
